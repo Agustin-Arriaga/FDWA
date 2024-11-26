@@ -110,15 +110,18 @@ ul > li {
 }
 
 #columna1{
-    background-color: rgb(165, 154, 116); padding: 10px;
+    background-color: rgb(165, 154, 116); 
+    padding: 10px;
 }
 
 #columna2{
-    background-color: rgb(238, 194, 144); padding: 10px;
+    background-color: rgb(238, 194, 144); 
+    padding: 10px;
 }
 
 #columna3{
-    background-color: rgb(144, 238, 222); padding: 10px;
+    background-color: rgb(144, 238, 222); 
+    padding: 10px;
 }
 
 
