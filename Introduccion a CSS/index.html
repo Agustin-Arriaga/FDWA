@@ -3,10 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Hover</title>
+    <title>Clase introduccion a CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <p> La etiqueta <b>p</b> es para colocar párrafos</p>
+
+    <p><b>Selectores de Elementos: Estilizando por Nombre</b></p>
+    <p>Los selectores de elementos sirven para aplicar las mismas propiedades a un elemento en particular, por ejemplo, 
+        a continuacion cambiare la propiedad de los h1, para que todos los h1 tengan la letra color morado</p>
+        <h1> Soy un h1 y tengo la letra de color morado</h1>
+    
+    <p><b>Selectores de Clase: Estilizando por Grupo</b></p>
+    <p> Los selectores de clase sirven para agrupar ciertos elementos y que estos contengan ciertas caracteristicas. Por ejemplo, a continuacion mostrare un div que quiero que su fondo sea cyan</p>
+    <div class="jedi">Luke Skywalker</div>
+    <div class="sith">Darth Vader</div>
+    
+
+    <p><b>Selectores de ID: Estilizando de Forma Única</b></p>
+    <p>Se utilizan para darle un estilo unico, diferente a todos los demas elementos. A continuacion mostrare un ejemplo con Obi-Wan</p>
+    <div id="obiwan"> 
+        <h2>Obi-Wan Kenobi</h2>
+        <p>Un jedi sabio y valeroso. "La fuerza estara contigo, siempre"</p>
+        <img src="https://pbs.twimg.com/media/EXJo86-WoAIvn79?format=png&name=small" alt="obiwan" width="300px">
+    </div>
+
+    <p><b>Selectores Universales: ¡Estiliza Todo!</b></p>
+    <p>Sirve para aplicar un estilo a todos los elementos. A continuacion aplicar el mismo tipo de letra para todo el texto que se encuentra en el sitio.</p>
+
+    <p><b>Selectores de atributo</b></p>
+    <p>Se utiliza para seleccionar elementos según la presencia de un atributo determinado o para seleccionar la presencia de un atributo que tiene un 
+        valor en particular. Por ejemplo, a continuación haremos un ejemplo con una URL. La URL en los siguientes enlaces será seleccionada con base en estos criterios:</p>
+
+        <ul>
+            <li><a href="www.starwars.com">Star Wars Official Website</a></li>
+            <li><a href="https://www.swfan.com">Star Wars Fan Page</a></li>
+            <li><a href="https://www.swofficial.film">Star Wars Film</a></li>
+        </ul>
+
+    <p> <b>Pseudoclase: HOVER</b></p>
+    <p> La Pseudoclase aplica estilos a ciertos estados de un elemento, por ejemplo si seleccionas una parte determinada de un elemento, este puede cambiar si pasas el raton por enciam de el. A continuacion se muestra un ejemplo de como cambia el boton al pasar el cursor sobre este elemento. Cambia de gris a Azul</p>
     <button>¡Pasa el ratón por aquí!</button>
+    
+    <p><b> Pseudoelemento</b></p>
+    <p> Los Pseudoelementos seleccionan una parte determinada de un elemento. </p>
+    <article> En este ejemplo, vamos a aplicar un estilo especial solo a la primera línea de texto de este párrafo. 
+        La primera línea esta en *negritas*, de color *azul* y con un tamaño de fuente más grande.    </article>
+
+    <p><b> Combinadores</b></p>
+    <p> Sirve para combiar otros selectores con el fin de delimitar elementos de nuestros documentos. </p>
+
+    <ul>
+        <li>Elemento de la lista 1 (hijo directo de ul) aparece con texto blanco y fondo morado </li>
+        <div>
+            <li>Elemento de la lista 2 (está dentro de un div, no es hijo directo de ul), por lo tanto no aparece estilizado</li>
+        </div>
+        <li>Elemento de la lista 3 (hijo directo de ul) aparece con texto blanco y fondo morado</li>
+    </ul>
+
+
+    <p><b>Displays</b></p>
+    <p>Sirve para indicarle al navegador cómo debe comportarse cada elemento de la página. A continuacion se mencionan algunos de los valores mas importantes de esta 
+        propiedad</p>
+
+    <p><b>1. display: inline - Elementos en Línea</b></p>
+    <p>Los elementos con <b>display: inline</b> funcionan de la misma manera que las palabras en una frase. Se alinean en la misma línea, uno tras otro, 
+        sin comenzar una nueva línea.</p>
+    <p><b>Ejemplo:</b></p>
+    <a href="#">Este es un enlace en línea</a><span> y este es un texto dentro de un span.</span>
+
+    <p><b>2. display: block - Elementos en Bloque</b></p>
+    <p>Son como cajas que ocupan todo el ancho disponible y siempre comienzan en una nueva línea. Elementos como div, h1, p, y ul son por defecto de bloque.</p>
+    <p><b>Ejemplo:</b></p>
+    <div>Este es un elemento de bloque y ocupa toda la línea.</div>
+    <p>Este es otro elemento de bloque que también comienza en una nueva línea.</p>
+
+    <p><b>3. display: inline-block - Lo Mejor de Dos Mundos</b></p>
+    <p>Con <b>display: inline-block</b>, los elementos se alinean uno tras otro como inline, pero también respetan propiedades como width, height, margin, y padding, 
+        como un elemento de bloque. Son ideales para menús de navegación o tarjetas en un diseño en fila.</p>
+    <p>Ejemplo:</p>
+    <div id="caja1"><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" alt="charmander" width="100px"></div>
+    <div id="caja2"><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/152.png" alt="chikorita" width="100px"></div>
+
+    <p><b>4. display: flex - Flexibilidad en la Distribución</b></p>
+    <p>Permite una distribución flexible de los elementos dentro de un contenedor. Se pueden alinear y distribuir elementos fácilmente dentro del contenedor, 
+        ideal para diseños más complejos.</p>
+    <p><b>Ejemplo:</b></p>
+    <div class="cajitaFlexible">
+        <div id="hijito1"><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" alt="bulbasaur" width="100px"></div>
+        <div id="hijito2"><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/094.png" alt="gengar" width="100px"></div>
+        <div id="hijito3"><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/054.png" alt="patitoestresado" width="100px"></div>
+    </div>
+
+    <p><b>5. display: grid - La Rejilla Maestra</b></p>
+    <p>Es ideal para crear diseños complejos con filas y columnas. Funciona para estructuras de página más avanzadas donde se necesita colocar elementos en 
+        una cuadrícula de filas y columnas.</p>
+    <p><b>Ejemplo:</b></p>
+    <div class="cajitaTablita">
+        <div id="columna1"><center><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/050.png" alt="tencontre" width="100px"></center></div>
+        <div id="columna2"><center><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/105.png" alt="marowak" width="100px"></center></div>
+        <div id="columna3"><center><img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" alt="squirlu" width="100px"></center></div>
+
+    </div>
+
+    <p><b>6. display: none - Desapareciendo en Acción</b></p>
+    <p>Cuando se utiliza <b>display: none</b> a un elemento, este desaparece completamente de la página, no ocupa espacio y no es visible. Es diferente de visibility: hidden, 
+        que solo hace invisible el elemento pero sigue ocupando su espacio.</p>
+    <p>Ejemplo:</p>
+    <div style="display: none;">Este div está oculto y no ocupa espacio en la página.</div>
+
 </body>
 </html>
