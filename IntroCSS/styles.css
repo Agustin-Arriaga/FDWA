@@ -1,140 +1,63 @@
-*{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-button {
-    background-color: grey; /* Color inicial del botón */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: blue; /* Color del botón cuando el ratón pasa por encima */
-  }
-  
-
-  h1{
-    color: blueviolet;
-  }
-
-  .jedi{
-   background-color: rgb(0, 255, 255);
-   color: blue;
-   padding: 5px; 
-  }
-  
-  .sith{
-    background-color: rgb(0, 140, 255);
-    color: rgb(4, 4, 49);
-    padding: 20px; 
-   }
-
-#obiwan{
-    background-color: rgb(207, 143, 25);
-    color: rgb(48, 48, 46);
-    font-size: 20px;
-    text-align: center;
+body {
+	color: #4d5565;
+	background-color: #eef2f6;
+	font-family: "Poppins", Sans-serif;
 }
 
- /* el * es para buscar los enlaces que contengan la palabra starwars */
- a[href*="starwars"] {
-    color: rgb(255, 0, 242);
-    font-weight: bold;
+img {
+	width: 125px;
 }
 
-/* el ^ es para seleccionar los enlaces que empiezan con https */
-a[href^="https://"] {
-    color: rgb(59, 192, 59);
+a {
+	/* quita estilos por defecto */
+	text-decoration: none;
+	color: inherit;
+	padding: 0.5rem;
+	border-radius: 5px;
 }
 
-/* e; $ es para los que terminan en .film*/
-a[href$=".film"] {
-    color: red;
+li {
+	/* quita estilos por defecto */
+	list-style: none;
 }
 
-article::first-line {
-    font-weight: bold; 
-    color: blue; 
-    font-size: 23px; 
+#cta {
+	/* quita estilos por defecto */
+	border: none;
+	font-size: inherit;
+	/* agregamos estilos propios */
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #51b2d4;
+	padding: 1rem 2rem;
 }
 
-ul > li {
-    color: white; 
-    background-color: purple; 
-    padding: 8px; 
-    font-size: 25px; 
-    margin-bottom: 8px; 
+/* Efectos Hover (Pseudoclase) */
+a:hover {
+	background-color: rgb(81, 178, 212, 0.1);
+	color: #51b2d4;
 }
 
-/*display: inline-block*/
-#caja1{
-    display: inline-block; 
-    width: 100px; 
-    background-color: lightsalmon;
+#cta:hover {
+	transform: scale(1.05);
+	cursor: pointer;
 }
 
-#caja2{
-    display: inline-block; 
-    width: 100px; 
-    background-color: lightgreen;
+/* ⬇️ Acerca de FLEXBOX ⬇️ */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-/*display: inline-flex*/
-.cajitaFlexible{
-    display: flex; 
-    justify-content: space-between;
+.navbar--menu{
+  display:flex;
+  gap:10px;
 }
-
-#hijito1{
-    background-color: lightblue; 
-    padding: 10px;
-}
-
-#hijito2{
-    background-color: rgb(238, 209, 241); 
-    padding: 10px;
-}
-
-#hijito3{
-    background-color: rgb(240, 238, 128); 
-    padding: 10px;
-}
-
-/*display: grid*/
-
-.cajitaTablita{
-    display: grid;
-    grid-template-columns: auto auto auto; 
-    gap: 10px;
-}
-
-#columna1{
-    background-color: rgb(165, 154, 116); padding: 10px;
-}
-
-#columna2{
-    background-color: rgb(238, 194, 144); padding: 10px;
-}
-
-#columna3{
-    background-color: rgb(144, 238, 222); padding: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
