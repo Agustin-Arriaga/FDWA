@@ -1,0 +1,28 @@
+ya DEBO TENER HASTA LA LECCION 6 DEL CURSO DE FRONTEND
+
+UNIDADES:
+FLEXBOX -CLASE 1
+GRID -CLASE 2 - fr que es la fraccion
+
+
+4 CLASES QUE RESTAN VAMOS A VER UNIDADES, 
+HEMOS VISTO fr y px 
+
+Unidades -clase 3
+Pseudoclases y pseudoelementos - clase 4
+variables - clase 5
+mediaqueryes y container queries - clase 6
+
+
+
+clase 3 UNIDADES
+Los pixeles no son la mejor unidad, no todos consumimos la web de la misma manera:
+
+papas que le cambian el tamanio de la letra, por la perdida de vista
+
+
+rem
+
+proyecto de esta clase, revisar de lo que ya llevamos de la pag de figma
+convertirlo que hemos visto, por ejemplo a em, a rems, a % lo que tengamos
+aqui poner las medidas modificadas de este proyecto de figma, poner el mismo repo

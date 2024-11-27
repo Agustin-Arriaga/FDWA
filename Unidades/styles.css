@@ -1,0 +1,105 @@
+body{
+    background-color: lightblue;
+    /* font-family: sans-serif; */
+    font-family: monospace;
+    /* padding: 20px; */
+    margin: 0;
+}
+
+/* Pixeles -> unidades relativas absolutas */
+/* Rem - unidades relativas (depende de los settings del navegador del usuario) 
+viene de root EM - tamanio de fuente de la raiz EM es de una M- por
+ defecto son 16px en todos los navegadores
+1 rem = 16px */
+
+a{
+    background-color: rgb(128, 128, 241);
+    color: white;
+    /* font-size: 24px; */
+    font-size: 1rem;
+    /* padding: 16px; */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+/* Ems - consulta el tam de funte de su papa*/
+span{
+    color: blueviolet;
+}
+
+/* 1.5 rem es igual a 24 px */
+section{
+    font-size: 1.5em; 
+}
+
+h1,h2,h3{
+    /* font-size: 1em; 1 x 24px=24px */
+    background-color: lavender;
+    border: solid 1px;
+    /* propio espaciado */
+    margin-bottom: 1.5em;
+}
+
+h1{
+font-size: 10vw;
+}
+
+p{
+    /* 1.2em x 24px =28.8px*/
+    font-size: 1.2em;
+}
+
+span{
+     /* 1.2em x 28.8px =34.56px*/
+    font-size: 1.2em;
+}
+
+#box-1{
+    display: inline-block;
+    background-color: cadetblue;
+    width: 20px;
+    height: 1ex; /*mas chaparrito como rectangulo*/
+
+}
+
+#ch{
+    /* ch - characteres, es decir maximo 70 caracteres */
+max-width: 70ch; 
+
+}
+
+/* viewport witdh -> vw 
+    viewport heigh -> vh
+    dynamic viewport witdh -> dvw - no tienen muy buen soporte
+    dynamic viewport heigh -> dvh - no tienen muy buen soporte
+
+    el dynamic viewport es para telefonos, solo abarca unicamente el espacio visible dentor del tam de mi pagina 
+    */
+
+    
+article{
+    /* height: 550px; */
+    /* vh es un fallback (respaldo) de dynamic view port height */
+    height: 100vh;
+    /* solo chrome y mozilla */
+    /* height: 100dvh; */
+ 
+    width: 50vw; /*50% del papa pero el 100% de esta pantalla*/
+    background-color: lavenderblush;
+}
+
+
+/* vmin - toma la medida mas pequenia entre el ancho y alto de viewport */
+     /* vmax- toma la medida mas grande entre el ancho y alto de viewport */
+.box{
+
+    background-color: rgb(243, 123, 207);
+    /* width: 50%; */
+    width: 100vmax;
+    /* aspect-ratio: 1; */
+    height: 50%;
+    /* es mejor % que px, nos dan chance de darle alruta y ancho dependiendo del contenedor padre*/
+    /* width: 203.5px;
+    height: 275px; */
+}
