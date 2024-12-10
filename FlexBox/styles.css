@@ -2,6 +2,7 @@ body {
     background-color: #FFF7F0;
     color: #030303;
     font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
   }
   
   nav {
@@ -9,12 +10,14 @@ body {
     justify-content: space-between;
     align-items: center;
     /* top, right, bottom, left */
-    padding:20px 60px 10px 70px ;
+    /* padding:20px 60px 10px 70px ; */
+    padding: 1rem 4vw 0.5rem 4vw;
   }
   
 
   #logo img {
-    width: 64px;
+    /* width: 64px; */
+    width: 4rem;
     aspect-ratio: 1;
   }
   
@@ -22,36 +25,47 @@ body {
     background-color: #030303;
     color: #FFF7F0;
     text-decoration: none;
-    padding: 14px 45px;
+    /* padding: 14px 45px; */
+    padding: 1rem 3rem;
     border-radius: 1000px;
     
   }
   
   .text-content {
     text-align: center;
-    padding: 10px 135px 10px 135px;
+    /* padding: 10px 135px 10px 135px; */
+    padding: 1rem 8vw;
   }
   
   h1 {
-    font-size: 46px;
-    margin-block-end: 22px;
+    /* font-size: 46px;
+    margin-block-end: 22px; */
+    font-size: 3rem;
+    margin-bottom: 1.5em;
   }
   
   .text-content p {
     color: #7A746E;
-    font-size: 20px;
+    /* font-size: 20px;
     padding: 5px 90px 5px 90px;
-    max-width: 1200px;  
+    max-width: 1200px;   */
+    font-size: 1.25rem; 
+    padding: 1rem 5vw;
+    max-width: 75%; 
     margin: 0 auto;
   }
   
   .image-container {
     display: flex;
-    gap: 24px;
+    /* gap: 24px;
     padding: 20px 75px;
-    height: 280px;
+    height: 280px; */
+    gap: 2rem;
+    padding: 2rem 6vw;
+    height: 40vh; 
     max-width: 1200px; 
     margin: 0 auto;
+   
   }
   
   .image-container a {
@@ -68,6 +82,8 @@ body {
     border-radius: 8px;
     border-color: #755CDE;
     overflow: hidden;
+    padding: 1rem;
+    
   }
 
 
@@ -78,9 +94,12 @@ body {
   }
   
   #cajita1 img{
-    width: 100px;
+    max-width: 35%;
      /* top, right, bottom, left */
-    padding: 15px 10px 50px 235px ;
+    /* padding: 10px 10px 50px 200px; */
+    padding: 0.625rem 0.625rem 6.25rem 12.5rem;
+    margin-left: auto;
+    display: block; 
   }
 
   #cajita2{
@@ -88,6 +107,7 @@ body {
     border-radius: 8px;
     border-color: #EB7565;
     overflow: hidden;
+    padding: 1rem;
   }
 
   #cajita2 h2{
@@ -97,9 +117,12 @@ body {
   }
 
   #cajita2 img{
-    width: 190px;
+    max-width: 60%;
      /* top, right, bottom, left */
-    padding: 15px 14px 105px 145px ;
+    /* padding: 10px 12px 175px 0px; */
+    padding:  0.625rem 0.75rem 10.9375rem 0px;
+    margin-left: auto;
+    display: block;
   }
 
   #cajita3{
@@ -107,6 +130,7 @@ body {
     background-color: #61C4B7;
     border-color: #61C4B7;
     overflow: hidden;
+    padding: 1rem;
   }
 
   #cajita3 h2{
@@ -116,9 +140,12 @@ body {
   }
 
   #cajita3 img{
-    width: 70px;
+    max-width: 27%;
      /* top, right, bottom, left */
-    padding: 15px 10px 25px 265px ;
+    /* padding: 10px 10px 45px 215px */
+    padding: 0.625rem 0.625rem 2.8125rem 13.4375rem;
+    margin-left: auto;
+    display: block;
   }
 
 
@@ -134,7 +161,8 @@ body {
 
 
   #infoImage, #vacio, #info {
-      padding: 20px;
+      /* padding: 20px; */
+      padding: 2rem;
       border-radius: 8px;
   }
 
@@ -158,7 +186,8 @@ body {
     background-color: #EB7565;
     border: none;
      /* top, right, bottom, left */
-    padding: 13px 27px 13px 27px;
+    /* padding: 13px 27px 13px 27px; */
+    padding: 1rem 2rem; 
     border-radius: 20px;
     color: #FFFF;
     cursor: pointer;
