@@ -9,23 +9,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* top, right, bottom, left */
-    /* padding:20px 60px 10px 70px ; */
     padding: 1rem 4vw 0.5rem 4vw;
   }
   
 
   #logo img {
-    /* width: 64px; */
-    width: 4rem;
+    width: 5rem;
     aspect-ratio: 1;
+    padding: 20px 0px 0px 50px;
   }
   
   #call-to-action {
     background-color: #030303;
     color: #FFF7F0;
     text-decoration: none;
-    /* padding: 14px 45px; */
     padding: 1rem 3rem;
     border-radius: 1000px;
     
@@ -33,23 +30,17 @@ body {
   
   .text-content {
     text-align: center;
-    /* padding: 10px 135px 10px 135px; */
     padding: 1rem 8vw;
   }
   
   h1 {
-    /* font-size: 46px;
-    margin-block-end: 22px; */
-    font-size: 3rem;
-    margin-bottom: 1.5em;
+    font-size: 4rem;
+    margin-bottom: 1em;
   }
   
   .text-content p {
     color: #7A746E;
-    /* font-size: 20px;
-    padding: 5px 90px 5px 90px;
-    max-width: 1200px;   */
-    font-size: 1.25rem; 
+    font-size: 1.6rem; 
     padding: 1rem 5vw;
     max-width: 75%; 
     margin: 0 auto;
@@ -57,9 +48,6 @@ body {
   
   .image-container {
     display: flex;
-    /* gap: 24px;
-    padding: 20px 75px;
-    height: 280px; */
     gap: 2rem;
     padding: 2rem 6vw;
     height: 40vh; 
@@ -94,10 +82,8 @@ body {
   }
   
   #cajita1 img{
-    max-width: 35%;
-     /* top, right, bottom, left */
-    /* padding: 10px 10px 50px 200px; */
-    padding: 0.625rem 0.625rem 6.25rem 12.5rem;
+    max-width: 30%;
+    padding: 0.625rem 0.625rem 6.25rem 0px;
     margin-left: auto;
     display: block; 
   }
@@ -118,8 +104,6 @@ body {
 
   #cajita2 img{
     max-width: 60%;
-     /* top, right, bottom, left */
-    /* padding: 10px 12px 175px 0px; */
     padding:  0.625rem 0.75rem 10.9375rem 0px;
     margin-left: auto;
     display: block;
@@ -142,7 +126,6 @@ body {
   #cajita3 img{
     max-width: 27%;
      /* top, right, bottom, left */
-    /* padding: 10px 10px 45px 215px */
     padding: 0.625rem 0.625rem 2.8125rem 13.4375rem;
     margin-left: auto;
     display: block;
@@ -152,22 +135,27 @@ body {
   .contenedor2 {
     display: grid; 
     grid-template-columns: auto auto auto;
-    /* grid-template-columns: repeat(3, 1fr);  */
-    gap: 20px;
-    margin: 0 auto; 
-    padding: 80px 90px 10px 90px;
+    gap: 10px;
+    margin: 200px; 
     box-sizing: border-box; 
   }
 
 
   #infoImage, #vacio, #info {
-      /* padding: 20px; */
       padding: 2rem;
       border-radius: 8px;
+      font-size: 1.2em;
+      text-align: justify;
+     
+  }
+
+  #infoImage img{
+    width: 300px;
   }
 
   #infoImage {
-      background-color: #FFF7F0; 
+    background-color: #FFF7F0; 
+     padding: auto auto auto auto;
   }
 
   #vacio {
@@ -185,8 +173,6 @@ body {
   button{
     background-color: #EB7565;
     border: none;
-     /* top, right, bottom, left */
-    /* padding: 13px 27px 13px 27px; */
     padding: 1rem 2rem; 
     border-radius: 20px;
     color: #FFFF;
@@ -195,4 +181,187 @@ body {
 
   button :hover{
     background-color: #61C4B7;
+  }
+
+
+
+  
+  /* Media Query */
+
+/* MOVIL */
+  /* @media (width < 500px){  */
+  @media (max-width: 599px){ 
+    #logo img {
+      width: 4rem;
+      padding: 10px 20px 0px 10px;
+    }
+
+    #call-to-action {
+      padding: 1rem 1rem; 
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .text-content p {
+      font-size: 1.2rem; 
+    }
+    
+    .image-container {
+      display: flex;
+      /*cajita vertical*/
+      flex-direction: column; 
+      margin: 50px 5px 50px 5px;
+      height: 1000px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #cajita1{
+      width: 87%;
+      height: 210px;
+    }
+
+    #cajita1 h2{
+      font-size: 15px;
+    }
+
+    #cajita1 img{
+      width: 20%;
+      padding-bottom: 100px;
+    }
+
+
+    #cajita2{
+      width: 87%;
+      font-size: 0.3rem;
+      height: 210px;
+    }
+
+    #cajita2 h2{
+      font-size: 15px;
+    }
+
+    #cajita2 img{
+      width: 30%;
+      padding-bottom: 155px;
+    }
+
+    #cajita3{
+      width: 87%;
+      font-size: 15px;
+      height: 210px;
+    }
+
+    #cajita3 h2{
+      font-size: 15px;
+    }
+
+    #cajita3 img{
+      width: 15%;
+      padding-left: 90px;
+      padding-bottom: 70px;
+    }
+
+    
+    .contenedor2 {
+      display: grid;
+      grid-template-columns: auto; /*UNA COLUMNA*/
+      place-items: center;
+      margin: 0%;
+      padding-top: 0%;
+    }
+
+
+    #infoImage, #vacio, #info {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #infoImage img{
+      width: 200px;
+    }
+
+  }
+
+
+  /* IPAD */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .image-container {
+      margin: 50px 5px 30px 5px;
+      height: 80vh; 
+       flex-wrap: wrap;
+      gap: 50px;
+      padding-bottom: 10px;
+    }
+
+    #cajita1{
+      flex: 1 1 35%;
+      font-size: 10px;
+      height: 260px;
+    }
+
+    #cajita1 img{
+      width: 50%;
+      padding-bottom: 55px;
+    }
+
+    #cajita2{
+      flex: 1 1 35%;
+      font-size: 10px;
+      height: 262px;
+    }
+
+    #cajita2 img{
+      width: 50%;
+      padding-bottom: 111px;
+    }
+
+    #cajita3 {
+      width: 50%;
+      text-align: left;
+      padding-left: 0px;
+      font-size: 10px;
+      height: 300px;
+      padding-top: 0px;
+    }
+
+    #cajita3 img{
+      width: 10%;
+      padding: 30px 10px 30px 0px;
+      flex-direction: column;
+    }
+
+
+    .contenedor2 {
+      display: grid; 
+      grid-template-columns: auto 10px auto; 
+      gap: 3px;
+      margin: auto; 
+      place-items: center;
+      padding-top: 180px;
+    }
+  
+  
+    #infoImage, #vacio, #info {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    #infoImage img{
+      width: 200px;
+    }
+  }  
+
+
+  /*ESCRITORIO*/
+
+  @media (min-width: 1025px){
+
+    .image-container {
+      height: 50vh; 
+    }
+    
+    
   }
